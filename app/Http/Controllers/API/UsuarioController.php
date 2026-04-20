@@ -30,8 +30,9 @@ class UsuarioController extends Controller
             "telefone" => $request->telefone,
             "cpf" => $request->cpf,
             "email" => $request->email,
-            "foto_pefil" => $request->foto_pefil,
-            "status" => $request->status
+            "foto" => $request->foto_pefil,
+            "status" => $request->status,
+            "password" => "123"
         ]);
         return 'registro realizado com sucesso';
     }
