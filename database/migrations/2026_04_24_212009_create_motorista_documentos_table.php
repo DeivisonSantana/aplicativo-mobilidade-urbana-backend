@@ -11,13 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('motoristas', function (Blueprint $table) {
+        Schema::create('motorista_documentos', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->unique();
-            $table->string('cnh_numero');
-            $table->string('cnh_categoria');
-            $table->date('cnh_expiracao');
-            $table->boolean('ear');
+            $table->integer('motorista_id');
+            $table->string('documento');
+            $table->string('name');
+            $table->string('type');
+            $table->string('mime_type');
+            $table->string('size');
+            $table->string('path');
+            $table->string('status');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -28,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('motoristas');
+        Schema::dropIfExists('motorista_documentos');
     }
 };
