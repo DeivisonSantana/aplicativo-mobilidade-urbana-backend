@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Passageiro;
+use App\Models\CorridaDestino;
 use Illuminate\Http\Request;
 
-class PassageiroController extends Controller
+class CorridaDestinoController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return Passageiro::with('user')->paginate();
+        //
     }
 
     /**
@@ -26,7 +26,7 @@ class PassageiroController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Passageiro $passageiro)
+    public function show(CorridaDestino $corridaDestino)
     {
         //
     }
@@ -34,7 +34,7 @@ class PassageiroController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Passageiro $passageiro)
+    public function update(Request $request, CorridaDestino $corridaDestino)
     {
         //
     }
@@ -42,15 +42,8 @@ class PassageiroController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Passageiro $passageiro)
+    public function destroy(CorridaDestino $corridaDestino)
     {
         //
-    }
-
-    public function passageirosArquivados()
-    {
-        return  Passageiro::onlyTrashed()
-            ->latest('updated_at')
-            ->paginate();
     }
 }
