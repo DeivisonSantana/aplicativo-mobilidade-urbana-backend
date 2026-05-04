@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CorridaFinanceiro;
+use App\Models\CorridaDesconto;
 use Illuminate\Http\Request;
 
-class CorridaFinaceiroController extends Controller
+class CorridaDescontoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,7 +26,7 @@ class CorridaFinaceiroController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(CorridaFinaceiro $corridaFinaceiro)
+    public function show(CorridaDesconto $corridaDesconto)
     {
         //
     }
@@ -34,7 +34,7 @@ class CorridaFinaceiroController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, CorridaFinaceiro $corridaFinaceiro)
+    public function update(Request $request, CorridaDesconto $corridaDesconto)
     {
         //
     }
@@ -42,7 +42,7 @@ class CorridaFinaceiroController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(CorridaFinaceiro $corridaFinaceiro)
+    public function destroy(CorridaDesconto $corridaDesconto)
     {
         //
     }

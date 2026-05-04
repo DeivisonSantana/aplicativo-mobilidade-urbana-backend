@@ -2,13 +2,13 @@
 
 namespace Database\Factories;
 
-use App\Models\CorridaFinanceiro;
+use App\Models\CorridaDesconto;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<CorridaFinanceiro>
+ * @extends Factory<CorridaDesconto>
  */
-class CorridaFinanceiroFactory extends Factory
+class CorridaDescontoFactory extends Factory
 {
     /**
      * Define the model's default state.
