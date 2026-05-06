@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Tarifa;
+use App\Models\StatusBusca;
 use Illuminate\Http\Request;
 
-class TarifaController extends Controller
+class StatusBuscaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,19 +19,14 @@ class TarifaController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {   
-
-        Tarifa::create([
-            'cidade_id' => 18,
-            'produto_id' => 1
-            ...
-        ]);
+    {
+        //
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Tarifa $Tarifa)
+    public function show(StatusBusca $statusBusca)
     {
         //
     }
@@ -39,7 +34,7 @@ class TarifaController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Tarifa $Tarifa)
+    public function update(Request $request, StatusBusca $statusBusca)
     {
         //
     }
@@ -47,7 +42,7 @@ class TarifaController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Tarifa $Tarifa)
+    public function destroy(StatusBusca $statusBusca)
     {
         //
     }
